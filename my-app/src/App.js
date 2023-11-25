@@ -7,6 +7,7 @@ import States from './States'
 import NoPage from './NoPage'
 import Waa from './Waa'
 import TodoLIstLocal from './TodoLIstLocal'
+import ToDoL from './ToDoL'
 export default function App() {
   return (
     <div>
@@ -16,7 +17,8 @@ export default function App() {
             <Route path='' element={<Waa />} />
             <Route path='Contact' element={<Contact />} />
             <Route path='About' element={<About />} />
-            <Route path='TodoLIstLocal' element={<TodoLIstLocal />} />            
+            <Route path='TodoLIstLocal' element={<TodoLIstLocal />} />
+            <Route path='ToDoL' element={<ToDoL />} />
             <Route path='States' element={<States />} />
             <Route path='*' element={<NoPage />} />
           </Route>
@@ -34,6 +36,7 @@ function MainMenu() {
       <Button as={Link} to="/about" color='blue'>About</Button>
       <Button as={Link} to="/Contact" color='blue'>Contact</Button>
       <Button as={Link} to="/TodoLIstLocal" color='blue'>TodoLIstLocal</Button>
+      <Button as={Link} to="/ToDoL" color='blue'>ToDoL</Button>
       <Button as={Link} to="States" color='blue'>States</Button>
       <Button as={Link} to="Waa" color='blue'>Waa</Button>
 
