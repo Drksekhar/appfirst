@@ -20,6 +20,7 @@ export default function TodoLIstLocal() {
             Item:  <Input type="text" value={text} onChange={handleText} conteneditable="true" spellCheck="true" />
             <Button color='blue' onClick={addItem}> ADD</Button>
             <Button color="red"> DELETE</Button>
+            <Button color='blue'>UDATE</Button>
             <hr />
             <h1> To Do List</h1>
 
