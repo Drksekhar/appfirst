@@ -12,6 +12,7 @@ import ToDoL from './ToDoL'
 import ToDoPra2 from './ToDoPra2'
 import ToDoListSemantic from './ToDoListSemantic'
 import CatFacts from './api/CatFacts'
+import News from './api/News'
 
 export default function App() {
   return (
@@ -29,6 +30,8 @@ export default function App() {
             <Route path='ToDoListSemantic' element={<ToDoListSemantic />} />
             <Route path='CatFacts' element={<CatFacts />} />
             <Route path='States' element={<States />} />
+            <Route path='News' element={<News />} />
+            
             <Route path='*' element={<NoPage />} />
           </Route>
         </Routes>
@@ -51,6 +54,7 @@ function MainMenu() {
       <Button as={Link} to="/ToDoListSemantic" color='blue'>ToDoListSemantic</Button>
       <Button as={Link} to="/CatFacts" color='blue'>CatFacts</Button>
       <Button as={Link} to="States" color='blue'>States</Button>
+      <Button as={Link} to="News" color='blue'>News</Button>
       <Button as={Link} to="Waa" color='blue'>Waa</Button>
 
       <hr />

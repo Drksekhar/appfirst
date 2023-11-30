@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
-
 export default function CatFacts() {
     const [list, setList] = useState([])
     const [loading, setLoading] = useState(true)
+
     useEffect(() => {
         setLoading(true)
         fetch("https://cat-fact.herokuapp.com/facts/")
@@ -23,14 +23,11 @@ export default function CatFacts() {
                     </>
                     :
                     list.map((item) => {
-                        return (
+                        return (<p>{item.text}</p>)
 
-                            <li>{item.text}</li>
 
-                        )
                     })
             }
         </div>
     )
 }
-
